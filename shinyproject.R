@@ -26,6 +26,12 @@ library(plotly)
 
 
 ProElect <- read_excel("production.xlsx")
+## Vous pourriez mettre le fichier production.xlsx à la racine 
+# du projet dans votre git comme ça on pourrait compiler directement votre fichier
+# sans télécharger des fichiers annexes. En plus vous vous assurez d'avoir le meme df 
+# pour tout le monde. Par exemplesur bon df production mes colonnes ne sont pas normés
+# j'ai un colonne Année et non Annee comme dans votre porjet ou encore
+# Nom commune et non Nomcommune
 names(ProElect) <- gsub(" ", "", names(ProElect))
 ProElect<-data.frame(ProElect)
 # Interface utilisateur
@@ -62,7 +68,9 @@ ui <- dashboardPage( skin="blue",
       
       tabItem(tabName = "analyse",
               tabBox(id="t1", width = 12, 
-
+                    # c'est illisible il faut sauter des lignes, il a une petit barre
+                    # dans chaque IDE pour indiquer là où on doit s'arrêter à 
+                    # peu près d'écrire
                      tabPanel("Photovoltaïque", plotOutput("energyRegionPlot"),plotOutput("energyYearPlot"),plotOutput("energyYearPlot"),plotOutput("correlationPlot"), icon=icon("chart-pie"),tableOutput("clusterEQ1_tab")),
                      tabPanel("Eolien",plotOutput("energyRegionPlot1"),plotOutput("energyYearPlot1"),plotOutput("energyYearPlot1"),plotOutput("correlationPlot1") ,icon=icon("uncharted"),tableOutput("clusterEQ2_tab")),
                      tabPanel("Hydraulique",plotOutput("energyRegionPlot2"),plotOutput("energyYearPlot2"),plotOutput("energyYearPlot2"),plotOutput("correlationPlot2") ,icon=icon("chart-pie"),tableOutput("clusterEQ2_tab")),
