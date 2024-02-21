@@ -1,16 +1,17 @@
-Application R Shiny : Production Électrique Annuelle 
+Jeu de DonnÃ©es : "Production Ã©lectrique annuelle par filiÃ¨re Ã  la maille commune" disponible sur l'open data Enedis : https://data.enedis.fr/explore/dataset/production-electrique-par-filiere-a-la-maille-commune
+Application R Shiny : Production Ã‰lectrique Annuelle 
 
-Aperçu :
-Cette application R Shiny offre une analyse interactive des données de production électrique annuelle. Elle propose une interface complète pour filtrer et visualiser les données de production électrique selon différentes dimensions telles que l'année, la région, le département et la commune. Les données utilisées dans cette application proviennent du fichier "production.xlsx" et couvrent différents types de production comme le photovoltaïque, l'éolien, l'hydraulique, la bioénergie, la cogénération, et d'autres secteurs.
+AperÃ§u :
+Cette application R Shiny offre une analyse interactive des donnÃ©es de production Ã©lectrique annuelle. Elle propose une interface complÃ¨te pour filtrer et visualiser les donnÃ©es de production Ã©lectrique selon diffÃ©rentes dimensions telles que l'annÃ©e, la rÃ©gion, le dÃ©partement et la commune. Les donnÃ©es utilisÃ©es dans cette application proviennent du fichier "production.xlsx" et couvrent diffÃ©rents types de production comme le photovoltaÃ¯que, l'Ã©olien, l'hydraulique, la bioÃ©nergie, la cogÃ©nÃ©ration, et d'autres secteurs.
 
-Fonctionnalités :
-- Filtrage des données par année, région, département et commune.
-- Visualisations interactives pour l'analyse de la production électrique.
-- Onglets séparés pour différents types de production et informations géographiques détaillées.
-- Fonctionnalité de téléchargement pour les données filtrées.
+FonctionnalitÃ©s :
+- Filtrage des donnÃ©es par annÃ©e, rÃ©gion, dÃ©partement et commune.
+- Visualisations interactives pour l'analyse de la production Ã©lectrique.
+- Onglets sÃ©parÃ©s pour diffÃ©rents types de production et informations gÃ©ographiques dÃ©taillÃ©es.
+- FonctionnalitÃ© de tÃ©lÃ©chargement pour les donnÃ©es filtrÃ©es.
 
-Prérequis :
-Pour exécuter cette application, vous devez avoir R installé sur votre système ainsi que les packages R suivants :
+PrÃ©requis :
+Pour exÃ©cuter cette application, vous devez avoir R installÃ© sur votre systÃ¨me ainsi que les packages R suivants :
 - shiny
 - shinydashboard
 - shinythemes
@@ -34,23 +35,23 @@ Pour exécuter cette application, vous devez avoir R installé sur votre système a
 - plotly
 
 Installation :
-1. Clonez ou téléchargez ce dépôt sur votre machine locale.	
+1. Clonez ou tÃ©lÃ©chargez ce dÃ©pÃ´t sur votre machine locale.	
 2. Ouvrez le script R (app.R ou similaire) dans votre IDE R (comme RStudio).
 3. Installez-les packages manquants en utilisant `install.packages(" nom_du_package ") `.
-4. Définissez le répertoire de travail sur le dossier contenant le script et le fichier de données en utilisant `Sed(" chemin/vers/le/dossier ") `.
-5. Exécutez l'application en lançant le script.
+4. DÃ©finissez le rÃ©pertoire de travail sur le dossier contenant le script et le fichier de donnÃ©es en utilisant `Sed(" chemin/vers/le/dossier ") `.
+5. ExÃ©cutez l'application en lanÃ§ant le script.
 
  Utilisation :
 1. Lancez l'application dans R.
-2. Utilisez la barre latérale pour sélectionner les filtres pour l'année, la région, le département et la commune.
-3. Naviguez à travers les onglets pour explorer différentes visualisations.
-4. Interagissez avec les graphiques pour des insights détaillés.
-5. Téléchargez les données filtrées si nécessaire en utilisant l'onglet de téléchargement.
+2. Utilisez la barre latÃ©rale pour sÃ©lectionner les filtres pour l'annÃ©e, la rÃ©gion, le dÃ©partement et la commune.
+3. Naviguez Ã  travers les onglets pour explorer diffÃ©rentes visualisations.
+4. Interagissez avec les graphiques pour des insights dÃ©taillÃ©s.
+5. TÃ©lÃ©chargez les donnÃ©es filtrÃ©es si nÃ©cessaire en utilisant l'onglet de tÃ©lÃ©chargement.
 
- Données :
-Les données doivent être dans un fichier Excel nommé "production.xlsx". Assurez-vous que le fichier est dans le bon format et placé dans le même répertoire que le script de l'application.
+ DonnÃ©es :
+Les donnÃ©es doivent Ãªtre dans un fichier Excel nommÃ© "production.xlsx". Assurez-vous que le fichier est dans le bon format et placÃ© dans le mÃªme rÃ©pertoire que le script de l'application.
 
  Contribution :
-N'hésitez pas à forker le dépôt et à soumettre des pull requêtes. Vous pouvez également ouvrir des issues pour des bugs trouvés ou des demandes de fonctionnalités.
+N'hÃ©sitez pas Ã  forker le dÃ©pÃ´t et Ã  soumettre des pull requÃªtes. Vous pouvez Ã©galement ouvrir des issues pour des bugs trouvÃ©s ou des demandes de fonctionnalitÃ©s.
 
-Assurez-vous de personnaliser ce modèle selon les caractéristiques et fonctionnalités spécifiques de votre application. Si votre application comporte des étapes de configuration supplémentaires ou des notes importantes, incluez-les dans les sections respectives. Application R Shiny : Production Électrique Annuelle
+Assurez-vous de personnaliser ce modÃ¨le selon les caractÃ©ristiques et fonctionnalitÃ©s spÃ©cifiques de votre application. Si votre application comporte des Ã©tapes de configuration supplÃ©mentaires ou des notes importantes, incluez-les dans les sections respectives. Application R Shiny : Production Ã‰lectrique Annuelle
